@@ -1,0 +1,51 @@
+#image classification is a computer vision technique to categorize an image into one of several
+predined catergories.
+
+#many technologies are used like:-
+python library scikit learn
+yolov8
+teachable machine(tenserflow, no code)
+etc
+
+#input = image
+
+#output = integer, string, vector
+
+#confidence scroes
+
+image classifiers usually provide a  measure of confidence along with their classification
+it is a float variable in [0,1]
+it represebts how confident the classifier is regarding the classification
+
+#examples
+
+parking spot classifier(empty/non empty)
+weather classifier (rain/sunrise/cloudy/shine)
+ship classifier(ship/no ship)
+spoofing classifier (fake/real)
+
+
+#image classification metrics
+(how to measure the performance of an image classifier?)
+
+confusion matrix
+accuracy
+precision and recall
+
+#confusion matrix
+summarizes performance across all classes
+very visual way to evaluate a classifier
+ideal confusion matrix is diagonal
+
+#accuracy
+interpretability is straightforward if classes are balanced
+higher is better
+accuracy = (TP + TN)/Total no. of samples
+
+#precision and recall
+most adequate metrics if classes are not perfectly balanced or if misclassifications are expensive
+recall measures how effectively we can find objects
+precision measures how well we perform after we find the objects
+higher is better
+precision = TP/TP+FP, recall = TP/TP+FN
+
